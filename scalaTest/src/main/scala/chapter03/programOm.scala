@@ -1,6 +1,7 @@
 package chapter03
 
 import java.util
+import scala.collection.immutable.StringOps
 
 /**
  * Description： TODO
@@ -13,7 +14,7 @@ import java.util
 object programOm {
   def main(args: Array[String]): Unit = {
 
-    var arrars: util.ArrayList[String] = new util.ArrayList[String]
+    var arrars: util.ArrayList[StringOps] = new util.ArrayList[StringOps]
 
     arrars.add("1")
     arrars.add("1")
@@ -22,7 +23,10 @@ object programOm {
     arrars.add("1")
     arrars.add("1")
 
-    arrars.forEach(s=>printf("%s",s))
+    arrars.forEach(s=>{
+      printf("%s",s)
+
+    })
 
   }
 }
