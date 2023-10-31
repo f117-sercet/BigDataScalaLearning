@@ -66,12 +66,14 @@ object FuncMethod {
   def f6() {
     "dalang6"
   }
+
   println(f6())
 
-  def f7=(x:String)=>{
+  def f7 = (x: String) => {
     println("wusong")
   }
-  def f10(f:String=>Unit) ={
+
+  def f10(f: String => Unit) = {
     f("")
   }
 
